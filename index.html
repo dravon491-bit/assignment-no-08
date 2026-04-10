@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethical &amp; Legal Aspects in Product Design</title>
+  <meta name="description" content="A comprehensive exploration of ethical, legal, and societal responsibilities in modern product design and technology development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip to content link for keyboard/screen-reader users -->
+  <a href="#main-content" class="skip-link" id="skip-link">Skip to main content</a>
+
+  <!-- ====== Accessibility Toolbar ====== -->
+  <div class="a11y-toolbar" id="a11y-toolbar" role="toolbar" aria-label="Accessibility tools">
+    <button class="a11y-btn" id="btn-contrast" aria-label="Toggle high contrast mode" aria-pressed="false" title="High Contrast">
+      <i class="fas fa-adjust" aria-hidden="true"></i>
+    </button>
+    <button class="a11y-btn" id="btn-text-increase" aria-label="Increase text size" title="Increase Text">
+      <i class="fas fa-plus" aria-hidden="true"></i><span class="a11y-lbl">A</span>
+    </button>
+    <button class="a11y-btn" id="btn-text-decrease" aria-label="Decrease text size" title="Decrease Text">
+      <i class="fas fa-minus" aria-hidden="true"></i><span class="a11y-lbl">A</span>
+    </button>
+  </div>
+
+  <!-- ====== Navbar ====== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Primary navigation">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="EPD Home">
+        <i class="fas fa-scale-balanced" aria-hidden="true"></i>
+        <span>EPD<strong>Project</strong></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#hero" class="nav-link" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#problem" class="nav-link" role="menuitem">Problem</a></li>
+        <li role="none"><a href="#solution" class="nav-link" role="menuitem">Solution</a></li>
+        <li role="none"><a href="#features" class="nav-link" role="menuitem">Features</a></li>
+        <li role="none"><a href="#ethics" class="nav-link" role="menuitem">Ethics</a></li>
+        <li role="none"><a href="#tools" class="nav-link" role="menuitem">Tools</a></li>
+        <li role="none"><a href="#methodology" class="nav-link" role="menuitem">Methodology</a></li>
+        <li role="none"><a href="#algorithm" class="nav-link" role="menuitem">Algorithm</a></li>
+        <li role="none"><a href="#testcases" class="nav-link" role="menuitem">Tests</a></li>
+        <li role="none"><a href="#usecases" class="nav-link" role="menuitem">Use Cases</a></li>
+        <li role="none"><a href="#future" class="nav-link" role="menuitem">Future</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== MAIN ====== -->
+  <main id="main-content">
+
+    <!-- ========== 1. HERO ========== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-badge"><i class="fas fa-shield-halved" aria-hidden="true"></i> Ethics &amp; Law in Tech</div>
+        <h1 id="hero-title" class="hero-title">
+          Ethical &amp; Legal Aspects<br />
+          <span class="gradient-text">in Product Design</span>
+        </h1>
+        <p class="hero-subtitle">Understanding responsible and secure technology development</p>
+        <p class="hero-desc">
+          Every product we build carries ethical weight and legal responsibility. This project explores how 
+          designers and engineers can embed fairness, privacy, and compliance into every layer of technology—creating 
+          products that genuinely serve people and society.
+        </p>
+        <a href="#about" class="btn btn-primary hero-cta" id="cta-explore">
+          <span>Explore Project</span>
+          <i class="fas fa-arrow-down" aria-hidden="true"></i>
+        </a>
+        <div class="hero-metrics" aria-label="Key figures">
+          <div class="metric">
+            <span class="metric-val">71%</span>
+            <span class="metric-lbl">Users concerned about data privacy</span>
+          </div>
+          <div class="metric">
+            <span class="metric-val">$1.3T</span>
+            <span class="metric-lbl">Cost of data breaches globally</span>
+          </div>
+          <div class="metric">
+            <span class="metric-val">8</span>
+            <span class="metric-lbl">Core design pillars</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="mouse"><div class="wheel"></div></div>
+      </div>
+    </section>
+
+    <!-- ========== 2. ABOUT ========== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Project Overview</span>
+          <h2 id="about-title" class="section-title">Why Ethics &amp; Law Matter in Design</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              In an increasingly digital world, <strong>every product decision</strong> has ethical and legal 
+              implications. From how user data is collected to how algorithms make decisions, designers and engineers 
+              hold immense power over people's lives, privacy, and freedoms.
+            </p>
+            <p>
+              This project investigates the critical intersection of <em>ethics</em>, <em>law</em>, and 
+              <em>technology</em>. It examines real-world failures—data breaches, biased algorithms, 
+              non-compliant systems—and demonstrates how a proactive, responsibility-first approach can 
+              prevent harm while building better, more trustworthy products.
+            </p>
+            <p>
+              Understanding regulations like <strong>GDPR</strong>, <strong>IT Act 2000</strong>, and 
+              <strong>Consumer Protection Laws</strong> isn't optional—it's a fundamental requirement for 
+              any serious product team. Ethical design isn't a constraint; it's a <em>competitive advantage</em>.
+            </p>
+          </div>
+          <div class="about-cards reveal">
+            <div class="about-card">
+              <div class="about-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+              <div>
+                <h3>Privacy by Design</h3>
+                <p>Building data protection into architecture from day one</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-icon"><i class="fas fa-gavel" aria-hidden="true"></i></div>
+              <div>
+                <h3>Legal Compliance</h3>
+                <p>Adhering to national and international regulations</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+              <div>
+                <h3>User Trust</h3>
+                <p>Earning and maintaining user confidence through transparency</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-icon"><i class="fas fa-lightbulb" aria-hidden="true"></i></div>
+              <div>
+                <h3>Responsible Innovation</h3>
+                <p>Balancing progress with societal well-being</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. PROBLEM STATEMENT ========== -->
+    <section class="section section-alt" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Problem Statement</span>
+          <h2 id="problem-title" class="section-title">Challenges in Modern Product Design</h2>
+          <p class="section-desc">Critical issues that arise when ethics and legality are ignored in technology development.</p>
+        </div>
+        <div class="problem-grid">
+          <div class="problem-card reveal" id="prob-privacy">
+            <div class="problem-num" aria-hidden="true">01</div>
+            <div class="problem-icon"><i class="fas fa-user-lock" aria-hidden="true"></i></div>
+            <h3>Data Privacy Violations</h3>
+            <p>Products collecting, storing, and sharing user data without proper safeguards or transparency. Personal information is monetized without meaningful consent.</p>
+          </div>
+          <div class="problem-card reveal" id="prob-consent">
+            <div class="problem-num" aria-hidden="true">02</div>
+            <div class="problem-icon"><i class="fas fa-file-signature" aria-hidden="true"></i></div>
+            <h3>Lack of User Consent</h3>
+            <p>Complex, unreadable terms of service that obscure data practices. Users are forced to agree without truly understanding what they're consenting to.</p>
+          </div>
+          <div class="problem-card reveal" id="prob-ai">
+            <div class="problem-num" aria-hidden="true">03</div>
+            <div class="problem-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+            <h3>Unethical AI Decisions</h3>
+            <p>Algorithms making biased decisions in hiring, lending, and criminal justice. Lack of explainability means users can't understand or challenge outcomes.</p>
+          </div>
+          <div class="problem-card reveal" id="prob-legal">
+            <div class="problem-num" aria-hidden="true">04</div>
+            <div class="problem-icon"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i></div>
+            <h3>Legal Non-Compliance</h3>
+            <p>Products that fail to meet regulatory requirements like GDPR, HIPAA, or consumer protection laws—exposing companies to lawsuits and fines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. PROPOSED SOLUTION ========== -->
+    <section class="section" id="solution" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proposed Solution</span>
+          <h2 id="solution-title" class="section-title">An Ethics-First Design Approach</h2>
+        </div>
+        <div class="solution-grid">
+          <div class="solution-content reveal">
+            <div class="sol-item">
+              <div class="sol-num" aria-hidden="true">01</div>
+              <div>
+                <h3>Ethical-First &amp; Law-Compliant Design</h3>
+                <p>Embed ethical principles and legal requirements into the product lifecycle from ideation to deployment. Rather than treating compliance as an afterthought, make it the foundation of every design decision.</p>
+              </div>
+            </div>
+            <div class="sol-item">
+              <div class="sol-num" aria-hidden="true">02</div>
+              <div>
+                <h3>User Safety &amp; Transparency</h3>
+                <p>Prioritize user well-being by implementing clear data practices, easy-to-understand consent flows, and transparent algorithmic decision-making. Users should always know how their data is used.</p>
+              </div>
+            </div>
+            <div class="sol-item">
+              <div class="sol-num" aria-hidden="true">03</div>
+              <div>
+                <h3>Fairness &amp; Accountability</h3>
+                <p>Design systems that actively audit for bias, ensure equitable outcomes, and provide clear accountability structures. Every automated decision should be explainable and reviewable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="solution-visual reveal" aria-hidden="true">
+            <div class="sol-mockup">
+              <div class="mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <div class="mockup-body">
+                <div class="mockup-shield"><i class="fas fa-shield-halved"></i></div>
+                <div class="mockup-line w70"></div>
+                <div class="mockup-line w50"></div>
+                <div class="mockup-row">
+                  <div class="mockup-block"></div>
+                  <div class="mockup-block"></div>
+                </div>
+                <div class="mockup-line w60"></div>
+                <div class="mockup-check"><i class="fas fa-check-circle"></i> Compliant</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. FEATURES ========== -->
+    <section class="section section-alt" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Key Features</span>
+          <h2 id="features-title" class="section-title">Eight Pillars of Responsible Design</h2>
+          <p class="section-desc">Core principles that drive ethical, legal, and user-centric product development.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal" id="feat-privacy">
+            <div class="feature-icon"><i class="fas fa-lock" aria-hidden="true"></i></div>
+            <h3>Data Privacy Protection</h3>
+            <p>Robust safeguards for user data including encryption, access controls, and privacy-by-default configuration.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-consent">
+            <div class="feature-icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+            <h3>User Consent System</h3>
+            <p>Clear, granular consent mechanisms that let users understand and control exactly what data is collected and how it's used.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-storage">
+            <div class="feature-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+            <h3>Secure Data Storage</h3>
+            <p>Industry-standard encryption, secure servers, and minimal data retention policies to protect sensitive user information.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-algo">
+            <div class="feature-icon"><i class="fas fa-eye" aria-hidden="true"></i></div>
+            <h3>Transparent Algorithms</h3>
+            <p>Explainable AI and open documentation of how automated decisions are made, ensuring users understand outcomes.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-compliance">
+            <div class="feature-icon"><i class="fas fa-file-shield" aria-hidden="true"></i></div>
+            <h3>Legal Compliance</h3>
+            <p>Built-in compliance with GDPR, CCPA, IT Act, and other regulatory frameworks relevant to the product's jurisdiction.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-ethics">
+            <div class="feature-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+            <h3>Ethical Decision-Making</h3>
+            <p>Integrated ethical review processes and impact assessments at every stage of the product development lifecycle.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-bias">
+            <div class="feature-icon"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+            <h3>Fair &amp; Bias-Free Systems</h3>
+            <p>Active bias detection and mitigation in algorithms and processes to ensure equitable treatment for all users.</p>
+          </div>
+          <div class="feature-card reveal" id="feat-trust">
+            <div class="feature-icon"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+            <h3>User Trust &amp; Safety</h3>
+            <p>Comprehensive safety measures, transparent reporting, and accountability mechanisms that earn and maintain user trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. ETHICAL, LEGAL & SOCIETAL ========== -->
+    <section class="section" id="ethics" aria-labelledby="ethics-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ethical, Legal &amp; Societal</span>
+          <h2 id="ethics-title" class="section-title">Responsibility Beyond Code</h2>
+          <p class="section-desc">Technology carries deep ethical, legal, and societal responsibilities that shape its impact on people.</p>
+        </div>
+        <div class="ethics-grid">
+          <div class="ethics-card reveal" id="card-ethical">
+            <div class="ethics-icon"><i class="fas fa-scale-balanced" aria-hidden="true"></i></div>
+            <h3>Ethical Considerations</h3>
+            <ul>
+              <li><strong>Privacy Protection:</strong> Respecting user data and implementing privacy-first practices</li>
+              <li><strong>Fairness &amp; Non-Discrimination:</strong> Ensuring systems treat all users equitably regardless of background</li>
+              <li><strong>Transparency in Systems:</strong> Making algorithmic decisions understandable and open to scrutiny</li>
+              <li><strong>Accountability:</strong> Taking responsibility for product outcomes and their effects on users</li>
+            </ul>
+          </div>
+          <div class="ethics-card reveal" id="card-legal">
+            <div class="ethics-icon"><i class="fas fa-gavel" aria-hidden="true"></i></div>
+            <h3>Legal Compliance</h3>
+            <ul>
+              <li><strong>Data Protection Laws:</strong> Compliance with GDPR, CCPA, IT Act, and regional privacy regulations</li>
+              <li><strong>Copyright &amp; IP:</strong> Respecting intellectual property rights and open-source licensing</li>
+              <li><strong>Regulatory Compliance:</strong> Meeting industry-specific standards (HIPAA, PCI-DSS, etc.)</li>
+              <li><strong>Consumer Protection:</strong> Following fair trade and advertising regulations</li>
+            </ul>
+          </div>
+          <div class="ethics-card reveal" id="card-societal">
+            <div class="ethics-icon"><i class="fas fa-people-group" aria-hidden="true"></i></div>
+            <h3>Societal Impact</h3>
+            <ul>
+              <li><strong>Digital Trust:</strong> Building technology that people feel safe using and relying upon</li>
+              <li><strong>Safe Technology Usage:</strong> Protecting vulnerable users, especially children and elderly</li>
+              <li><strong>Positive Social Impact:</strong> Ensuring products contribute to societal well-being, not harm</li>
+              <li><strong>Digital Inclusion:</strong> Making technology accessible and beneficial for all communities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. TOOLS USED ========== -->
+    <section class="section section-alt" id="tools" aria-labelledby="tools-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tools Used</span>
+          <h2 id="tools-title" class="section-title">Project Resources &amp; Tools</h2>
+          <p class="section-desc">Key tools that supported the research, documentation, and presentation of this project.</p>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-card reveal" id="tool-word">
+            <div class="tool-icon"><i class="fas fa-file-word" aria-hidden="true"></i></div>
+            <h3>Word Processor</h3>
+            <p>Used for drafting, structuring, and formatting all project documentation, reports, and research findings.</p>
+            <span class="tool-usage">Documentation &amp; Reports</span>
+          </div>
+          <div class="tool-card reveal" id="tool-canva">
+            <div class="tool-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+            <h3>Canva</h3>
+            <p>Used for designing professional presentations, visual diagrams, flowcharts, and infographics for the project.</p>
+            <span class="tool-usage">Presentations &amp; Visuals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. METHODOLOGY ========== -->
+    <section class="section" id="methodology" aria-labelledby="meth-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Working Methodology</span>
+          <h2 id="meth-title" class="section-title">Step-by-Step Process</h2>
+          <p class="section-desc">A systematic approach to evaluating ethical and legal aspects of product design.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal" id="step-1">
+            <div class="timeline-marker"><span>1</span></div>
+            <div class="timeline-body">
+              <h3>Identify the Product</h3>
+              <p>Select a real-world product or system for analysis—understanding its purpose, users, and data practices.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" id="step-2">
+            <div class="timeline-marker"><span>2</span></div>
+            <div class="timeline-body">
+              <h3>Analyze Ethical Issues</h3>
+              <p>Examine the product's ethical implications—privacy practices, fairness of algorithms, user consent flows, and potential for harm.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" id="step-3">
+            <div class="timeline-marker"><span>3</span></div>
+            <div class="timeline-body">
+              <h3>Check Legal Compliance</h3>
+              <p>Evaluate the product against applicable laws and regulations—GDPR, IT Act, consumer protection, copyright, and industry standards.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" id="step-4">
+            <div class="timeline-marker"><span>4</span></div>
+            <div class="timeline-body">
+              <h3>Evaluate Societal Impact</h3>
+              <p>Assess how the product affects society—digital trust, vulnerable populations, accessibility, and long-term social consequences.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal" id="step-5">
+            <div class="timeline-marker"><span>5</span></div>
+            <div class="timeline-body">
+              <h3>Suggest Improvements</h3>
+              <p>Propose actionable design changes that address identified ethical, legal, and societal gaps—creating a more responsible product.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 9. ALGORITHM ========== -->
+    <section class="section section-alt" id="algorithm" aria-labelledby="algo-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Algorithm / Logic</span>
+          <h2 id="algo-title" class="section-title">Design Evaluation Flow</h2>
+          <p class="section-desc">A logical flowchart of how products are assessed for ethical and legal compliance.</p>
+        </div>
+        <div class="flow-chart reveal" role="img" aria-label="Algorithm flowchart: Start, Select Product, Check Ethics, Check Laws, Improve Design, Stop">
+          <div class="flow-step flow-terminal"><span>Start</span></div>
+          <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step flow-process"><i class="fas fa-search" aria-hidden="true"></i><span>Select Product</span></div>
+          <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step flow-decision"><i class="fas fa-scale-balanced" aria-hidden="true"></i><span>Check Ethics</span></div>
+          <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step flow-decision"><i class="fas fa-gavel" aria-hidden="true"></i><span>Check Laws</span></div>
+          <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step flow-process"><i class="fas fa-wrench" aria-hidden="true"></i><span>Improve Design</span></div>
+          <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step flow-terminal"><span>Stop</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 10. TEST CASES ========== -->
+    <section class="section" id="testcases" aria-labelledby="tc-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Quality Assurance</span>
+          <h2 id="tc-title" class="section-title">Test Cases</h2>
+          <p class="section-desc">Validation scenarios ensuring each ethical and legal requirement is met.</p>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="test-table" id="test-table" aria-label="Test cases for ethical and legal compliance">
+            <thead>
+              <tr>
+                <th scope="col">Test ID</th>
+                <th scope="col">Action</th>
+                <th scope="col">Expected Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="tid">TC-01</span></td><td>Check privacy policy implementation</td><td>User data is protected with encryption and proper safeguards</td></tr>
+              <tr><td><span class="tid">TC-02</span></td><td>Verify user consent mechanism</td><td>Permission is explicitly taken before data collection</td></tr>
+              <tr><td><span class="tid">TC-03</span></td><td>Audit legal compliance</td><td>All regulatory rules and standards are followed</td></tr>
+              <tr><td><span class="tid">TC-04</span></td><td>Test algorithmic fairness</td><td>No discriminatory bias found in automated decisions</td></tr>
+              <tr><td><span class="tid">TC-05</span></td><td>Verify data storage security</td><td>All stored data is encrypted at rest and in transit</td></tr>
+              <tr><td><span class="tid">TC-06</span></td><td>Check transparency disclosures</td><td>Data practices are clearly communicated to users</td></tr>
+              <tr><td><span class="tid">TC-07</span></td><td>Test data deletion request</td><td>User data is fully removed within mandated timeframe</td></tr>
+              <tr><td><span class="tid">TC-08</span></td><td>Verify copyright compliance</td><td>All third-party content is properly licensed and attributed</td></tr>
+              <tr><td><span class="tid">TC-09</span></td><td>Test accessibility features</td><td>Interface meets WCAG 2.1 Level AA standards</td></tr>
+              <tr><td><span class="tid">TC-10</span></td><td>Evaluate societal impact report</td><td>Product positively contributes to digital trust and inclusion</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 11. USE CASES ========== -->
+    <section class="section section-alt" id="usecases" aria-labelledby="uc-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applications</span>
+          <h2 id="uc-title" class="section-title">Use Cases &amp; Applications</h2>
+          <p class="section-desc">Industries and domains where ethical and legal design principles are critically important.</p>
+        </div>
+        <div class="usecases-grid">
+          <div class="usecase-card reveal" id="uc-social">
+            <div class="uc-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+            <h3>Social Media Platforms</h3>
+            <p>Content moderation ethics, user data monetization, algorithmic transparency, and protection against manipulation and misinformation.</p>
+          </div>
+          <div class="usecase-card reveal" id="uc-ecommerce">
+            <div class="uc-icon"><i class="fas fa-shopping-cart" aria-hidden="true"></i></div>
+            <h3>E-Commerce Systems</h3>
+            <p>Fair pricing algorithms, secure payment processing, honest product reviews, consumer data protection, and transparent advertising.</p>
+          </div>
+          <div class="usecase-card reveal" id="uc-gov">
+            <div class="uc-icon"><i class="fas fa-landmark" aria-hidden="true"></i></div>
+            <h3>Government Websites</h3>
+            <p>Citizen data privacy, accessibility for all populations, transparent governance tools, and secure digital service delivery.</p>
+          </div>
+          <div class="usecase-card reveal" id="uc-health">
+            <div class="uc-icon"><i class="fas fa-hospital" aria-hidden="true"></i></div>
+            <h3>Healthcare Applications</h3>
+            <p>Patient data confidentiality (HIPAA), ethical AI diagnosis, informed consent for data use, and equitable access to health tech.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 12. FUTURE SCOPE ========== -->
+    <section class="section" id="future" aria-labelledby="future-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What's Next</span>
+          <h2 id="future-title" class="section-title">Future Scope</h2>
+          <p class="section-desc">Where ethical and legal product design is headed — upcoming advances and expansions.</p>
+        </div>
+        <div class="future-grid">
+          <div class="future-card reveal" id="fut-ai">
+            <div class="future-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+            <h3>AI Ethics Integration</h3>
+            <p>Embedding ethical frameworks directly into AI systems—automated bias detection, explainable AI, and real-time fairness monitoring at scale.</p>
+            <span class="future-tag">Emerging</span>
+          </div>
+          <div class="future-card reveal" id="fut-data">
+            <div class="future-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+            <h3>Stronger Data Protection</h3>
+            <p>Next-generation privacy technologies like differential privacy, homomorphic encryption, and zero-knowledge proofs for absolute data security.</p>
+            <span class="future-tag">Research</span>
+          </div>
+          <div class="future-card reveal" id="fut-security">
+            <div class="future-icon"><i class="fas fa-fingerprint" aria-hidden="true"></i></div>
+            <h3>Advanced Security Systems</h3>
+            <p>Biometric authentication, quantum-resistant cryptography, and AI-powered threat detection systems for comprehensive product security.</p>
+            <span class="future-tag">Vision</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 13. CONCLUSION ========== -->
+    <section class="section section-conclusion" id="conclusion" aria-labelledby="concl-title">
+      <div class="container">
+        <div class="conclusion-body reveal">
+          <span class="section-tag">Conclusion</span>
+          <h2 id="concl-title" class="section-title">Designing with Responsibility</h2>
+          <p>
+            The digital products we create shape lives, influence decisions, and carry profound social consequences. 
+            <strong>Ethical and legal design is not a checkbox</strong>—it is a continuous commitment to building 
+            technology that respects human dignity, protects privacy, and promotes fairness.
+          </p>
+          <p>
+            This project demonstrates that integrating ethical considerations and legal compliance from the earliest 
+            stages of product design leads to <em>better products, stronger user trust, and positive societal impact</em>. 
+            Every line of code, every design choice, and every data practice reflects our values as technologists.
+          </p>
+          <p>
+            As technology continues to evolve, so must our responsibility. By embedding ethics and law into the 
+            DNA of product design, we create a digital future that truly serves <strong>everyone</strong>.
+          </p>
+          <div class="conclusion-icon" aria-hidden="true">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <i class="fas fa-scale-balanced" aria-hidden="true"></i>
+          <span>EPD<strong>Project</strong></span>
+        </div>
+        <div class="footer-info">
+          <p><strong>Project:</strong> Ethical &amp; Legal Aspects in Product Design</p>
+          <p><strong>Student:</strong> [Your Name]</p>
+          <p><strong>College:</strong> [Your College Name]</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 EPD Project. Built with <i class="fas fa-heart" aria-hidden="true"></i> and a commitment to ethical design.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
